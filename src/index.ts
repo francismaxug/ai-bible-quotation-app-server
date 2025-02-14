@@ -25,7 +25,7 @@ app.use(cors())
 const server = createServer(app)
 const io = new Server(server, {
   cors: {
-    origin: "https://ai-bible-quotation-app-client.vercel.app/", // Your frontend URL
+    origin: process.env.FRONTED_URL, // Your frontend URL
     methods: ["GET", "POST"],
     allowedHeaders: ["*"],
     credentials: true,
