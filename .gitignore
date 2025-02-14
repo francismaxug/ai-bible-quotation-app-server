@@ -1,0 +1,6 @@
+/node_modules
+*.pnp.*
+dist
+.vscode
+.env
+coverage
